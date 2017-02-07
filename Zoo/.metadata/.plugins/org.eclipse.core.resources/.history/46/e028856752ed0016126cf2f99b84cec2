@@ -1,0 +1,5 @@
+package zoo;
+
+abstract public class Fish {
+
+}

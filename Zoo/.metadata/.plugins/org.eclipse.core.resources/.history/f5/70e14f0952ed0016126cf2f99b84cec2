@@ -1,0 +1,103 @@
+package zoo;
+
+abstract class Animal implements livingThings{
+	
+	private int age;
+	private String name;
+	private String enclosure;
+	private String species;
+	private String breed;
+	private String size;
+	private int weight;
+	private int height;
+	
+	
+	                      //////////Constructors/////////
+	Animal(int age, String name, String enclosure, String species, String breed, String size, int height, int weight){};
+	Animal(){};
+	
+	                     ////////////Methods////////////
+	
+	public void excretion(){};
+	public void reproduction(){};
+	public void repsiration(){};
+	public void movement(){};
+	public void sensitivity(){}
+	
+	
+                        //////Getters & Setteres///////
+	//Age
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
+	//Name
+	public String getName(){
+		return name;
+	}
+	public void setName(String name){
+		this.name = name;
+	}
+		
+	
+	//Enclosure
+	public String getEnclosure(){
+		return enclosure;
+	}
+	public void setEnclosure(String enclosure){
+		this.enclosure = enclosure;
+	}
+		
+	
+	//Species
+	public String getSpecies(){
+		return species;
+	}
+	public void setSpecies(String species){
+		this.species = species;
+	}
+		
+	
+	// Breed
+	public String getBreed(){
+		return breed;
+	}
+	public void setBreed(String breed){
+		this.breed = breed;
+	}
+		
+	
+	
+	//Size
+	public String getSize(){
+		return size;
+	}
+	public void setSize(String size){
+		this.size = size;
+	}
+	
+	
+	//Height
+	public int getHeight(){
+		return height;
+	}
+	public void setHeight(int height){
+		this.height = height;
+	}
+		
+	//Weight
+	public int getWeight(){
+		return weight;
+	}
+	public void setWeight(int weight){
+		this.weight = weight;
+	}
+		
+	
+	}
+	
+
