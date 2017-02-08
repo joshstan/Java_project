@@ -10,6 +10,7 @@ abstract class Animal implements livingThings{
 	private String size;
 	private int weight;
 	private int height;
+	private String health;
 	
 	
 	                      //////////Constructors/////////
@@ -20,7 +21,7 @@ abstract class Animal implements livingThings{
 	
 	public void excretion(){};
 	public void reproduction(){};
-	public void repsiration(){};
+	public void respiration(){};
 	public void movement(){};
 	public void sensitivity(){}
 	
@@ -96,8 +97,20 @@ abstract class Animal implements livingThings{
 	public void setWeight(int weight){
 		this.weight = weight;
 	}
-		
+	
+	
+	//Health
+	public String getHealth(){
+		return health;
+	}
+	public void setHealth(String health){
+		this.health = health;
+	}
+	
 	
 	}
+		
+	
+	
 	
 

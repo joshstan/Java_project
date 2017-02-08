@@ -13,6 +13,7 @@ abstract class Mammal extends Animal implements Run {
                         ////Methods////
 	public void reproduction(){};
 	public void growth(){};
+	public void sprint(){};
 	
 
 }
