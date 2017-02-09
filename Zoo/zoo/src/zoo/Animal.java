@@ -1,6 +1,6 @@
 package zoo;
 
-abstract class Animal implements livingThings{
+public abstract class Animal implements livingThings{
 	
 	private int age;
 	private String name;
@@ -8,19 +8,14 @@ abstract class Animal implements livingThings{
 	private String species;
 	private String breed;
 	private String size;
-	private int weight;
-	private int height;
-	private String health;
-	int foodCounter;// do we need this?
+	private int weightKg;
+	private int heightCm;
 	int wasteCounter;
-	
-	//for eating
-	//if waste counter = weight/2
-			//animal.excerete
+	private String sex;
 
 	
 	                      //////////Constructors/////////
-	Animal(int age, String name, String enclosure, String species, String breed, String size, int height, int weight){
+	public Animal(int age, String name, String enclosure, String species, String breed, String size, int heightCm, int weightKg, int wasteCounter, String sex){
 		
 		this.age = age;
 		this.name =name;
@@ -28,26 +23,48 @@ abstract class Animal implements livingThings{
 		this.species = species;
 		this.breed = breed;
 		this.size = size;
-		this.height = height;
-		this.weight = weight;
+		this.heightCm = heightCm;
+		this.weightKg = weightKg;
+		this.wasteCounter = wasteCounter;
+		this.sex = sex;
 	}
 	
-	Animal(){}
+
 	
 	                     ////////////Methods////////////
 	
+	public void nutrition(){
+		wasteCounter += (weightKg/4);
+		excretion();
+	}
+	
+	
 	public void excretion(){
 		
-		if (wasteCounter > (weight/2))
+		System.out.print(wasteCounter);
+		if (wasteCounter > (weightKg/2))
 		setWasteCounter(0);
+		System.out.print(wasteCounter);
 	}	
 	
-	public void reproduction(Object a, Object b){
-		// if object a == object b? create new object
+	
+	public void reproduce(Animal a, Animal b) 
+	{
+//	     if (man.getSex().equals(woman.getSex()))
+//	    		 {
+//	                System.out.print("Incompatible Animals due to gender");
+//	              }
+//	     else {
+//	    	       return new ();
+//	         }
 	}
+
+	
 	public void respiration(){};
 	public void movement(){};
 	public void sensitivity(){}
+	
+
 	
 	
                         //////Getters & Setters///////
@@ -108,35 +125,28 @@ abstract class Animal implements livingThings{
 	
 	//Height
 	public int getHeight(){
-		return height;
+		return heightCm;
 	}
-	public void setHeight(int height){
-		this.height = height;
+	public void setHeight(int heightCm){
+		this.heightCm = heightCm;
 	}
 		
 	//Weight
 	public int getWeight(){
-		return weight;
+		return weightKg;
 	}
-	public void setWeight(int weight){
-		this.weight = weight;
-	}
-	
-	
-	//Health
-	public String getHealth(){
-		return health;
-	}
-	public void setHealth(String health){
-		this.health = health;
+	public void setWeight(int weightKg){
+		this.weightKg = weightKg;
 	}
 	
-	//Food Counter
-	public int getFoodCounter(){
-		return foodCounter;
+	
+	
+	//Sex
+	public String getSex(){
+		return sex;
 	}
-	public void setFoodCounter(int foodCounter){
-		this.foodCounter = foodCounter;
+	public void setSex(String sex){
+		this.sex = sex;
 	}
 	
 	

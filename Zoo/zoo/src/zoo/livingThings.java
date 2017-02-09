@@ -6,7 +6,7 @@ public interface livingThings {
 	public void growth();
 	public void movement();
 	public void nutrition();
-	public void reproduction();
+	public void reproduce(Animal a, Animal b);
 	public void respiration();
 	public void sensitivity();
 

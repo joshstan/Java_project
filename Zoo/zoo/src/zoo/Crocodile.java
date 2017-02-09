@@ -1,5 +1,10 @@
 package zoo;
 
-public class Crocodile {
+public class Crocodile extends Animal{
+	
+	boolean isEndangered;
+	boolean isNoctural;
+	
+	
 
 }

@@ -10,7 +10,7 @@ abstract class Amphibian extends Animal implements Swim{
 	
 	                 //////////////Methods///////////////
 	
-	public void nutrition(){};
+//	public void nutrition(){};
 	public void growth(){};
 	public void submerge(){};
 	public void emerge(){};

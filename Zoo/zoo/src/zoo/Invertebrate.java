@@ -1,6 +1,6 @@
 package zoo;
 
-abstract class Invertebrate extends Animal {
+public abstract class Invertebrate extends Animal {
 	
     
 	
