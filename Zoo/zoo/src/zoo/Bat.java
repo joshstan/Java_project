@@ -5,6 +5,7 @@ public class Bat extends Mammal implements Flying{
 	boolean endangered;
 	boolean nocturnal;
 	
+	
 	Bat(boolean endangered, boolean nocturnal){};
 	Bat(){};
 	

@@ -4,22 +4,42 @@ abstract class Animal implements livingThings{
 	
 	private int age;
 	private String name;
-	private String enclosure;
+	private String enclosure; //possibly made into an enum
 	private String species;
 	private String breed;
 	private String size;
 	private int weight;
 	private int height;
 	private String health;
+	int foodCounter = (weight/2);
+	int wasteCounter;
 	
+	//for eating
+	//if waste counter = weight/2
+			//animal.excerete
+
 	
 	                      //////////Constructors/////////
-	Animal(int age, String name, String enclosure, String species, String breed, String size, int height, int weight){};
-	Animal(){};
+	Animal(int age, String name, String enclosure, String species, String breed, String size, int height, int weight){
+		
+		this.age = age;
+		this.name =name;
+		this.enclosure = enclosure;
+		this.species = species;
+		this.breed = breed;
+		this.size = size;
+		this.height = height;
+		this.weight = weight;
+	}
+	
+	Animal(){}
 	
 	                     ////////////Methods////////////
 	
-	public void excretion(){};
+	public void excretion(){
+		//set waste counter (0)
+		
+	};
 	public void reproduction(){};
 	public void respiration(){};
 	public void movement(){};
@@ -107,6 +127,22 @@ abstract class Animal implements livingThings{
 		this.health = health;
 	}
 	
+	//Food Counter
+	public int getFoodCounter(){
+		return foodCounter;
+	}
+	public void setFoodCounter(int foodCounter){
+		this.foodCounter = foodCounter;
+	}
+	
+	
+	//Waste
+	public int getWasteCounter(){
+		return wasteCounter;
+	}
+	public void setWasteCounter(int wastecounter){
+		this.wasteCounter = wastecounter;
+	}
 	
 	}
 		
