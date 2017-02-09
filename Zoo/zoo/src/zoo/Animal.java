@@ -11,7 +11,7 @@ abstract class Animal implements livingThings{
 	private int weight;
 	private int height;
 	private String health;
-	int foodCounter = (weight/2);
+	int foodCounter;// do we need this?
 	int wasteCounter;
 	
 	//for eating
@@ -37,10 +37,14 @@ abstract class Animal implements livingThings{
 	                     ////////////Methods////////////
 	
 	public void excretion(){
-		//set waste counter (0)
 		
-	};
-	public void reproduction(){};
+		if (wasteCounter > (weight/2))
+		setWasteCounter(0);
+	}	
+	
+	public void reproduction(Object a, Object b){
+		// if object a == object b? create new object
+	}
 	public void respiration(){};
 	public void movement(){};
 	public void sensitivity(){}
